@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+body { margin:0; background:#17121f; color:#fff4e6; font-family:Georgia, 'Times New Roman', serif; line-height:1.65; }
+header { background:linear-gradient(135deg,#2b1738,#4b2050); border-bottom:5px solid #ff7518; padding:30px 7%; text-align:center; }
+header h1 { color:#ffad42; font-size:clamp(30px,5vw,42px); line-height:1.2; margin:5px 0 12px; letter-spacing:1px; }
+header p { margin:4px; color:#f7d8b4; }
+main { padding:24px 7%; overflow:auto; }
+.hero, .content-card, .fact-card, 
+div { transition:border-color .25s ease, background-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+div:hover { border-color:#ffd166; background-color:#43254f; box-shadow:0 0 0 3px #ff7518, 0 10px 28px rgba(255,117,24,.45); transform:translateY(-2px); }
+.hero { background:#301c3d; border-color:#8d4caa; }
+.hero figure { width:42%; max-width:440px; float:right; margin:0 0 16px 22px; }
+h2 { color:#ffad42; line-height:1.25; }
+p { margin:10px 0; }
+figure { margin:0 0 14px; }
+img { display:block; width:100%; max-width:100%; height:auto; border:3px solid #ff7518; border-radius:10px; transition:transform .28s ease, filter .28s ease, box-shadow .28s ease, border-color .28s ease; }
+img:hover { transform:scale(1.045); filter:brightness(1.22) saturate(1.3); border-color:#fff0a6; box-shadow:0 0 0 4px #ffad42, 0 10px 28px rgba(255,117,24,.65); }
+.content-card figure { width:260px; max-width:42%; float:left; margin:4px 20px 14px 0; }
+figcaption { color:#f7d8b4; font-size:.9rem; font-style:italic; margin:8px 0 0; padding:8px 10px; border-left:3px solid #ff7518; background:#211628; }
+.reading-box { max-height:320px; overflow:auto; padding:4px 12px 4px 0; scrollbar-color:#ffad42 #211628; scrollbar-width:thin; }
+.reading-box::-webkit-scrollbar { width:10px; }
+.reading-box::-webkit-scrollbar-track { background:#211628; border-radius:8px; }
+.reading-box::-webkit-scrollbar-thumb { background:#ffad42; border-radius:8px; border:2px solid #211628; }
+.fact-card { border-left:7px solid #ff7518; background:#402448; }
+
+
+a { color:#ffd08a; transition:color .2s ease, background-color .2s ease, outline .2s ease; }
+a:hover { color:#fff; background:#a8460a; outline:2px solid #ffd166; outline-offset:3px; }
+.site-nav { display: block; padding:16px; margin:18px 0 26px; background:#211628; border:2px solid #57396c; border-radius:12px; overflow:auto; }
+.site-nav a { display:inline-block; padding:8px 13px; border:2px solid #ff7518; border-radius:8px; background:#35203f; color:#ffd08a; font-weight:bold; text-decoration:none; }
+.site-nav a:hover { background:#ff7518; color:#1b1020; transform:scale(1.08); box-shadow:0 0 15px #ffad42; }
+.external-links { padding:18px; border:2px dashed #ffad42; border-radius:12px; margin:22px 0; overflow:auto; }
+.external-links li { margin:8px 0; }
+.small-note { color:#d8bfdc; font-size:14px; }
+footer { clear:both; text-align:center; background:#2b1738; border-top:4px solid #ff7518; padding:20px; margin-top:28px; color:#f7d8b4; }
+@media(max-width:700px) { main{padding:18px 5%;} .hero figure,.content-card figure{float:none;width:100%;max-width:100%;margin:10px 0;}  .reading-box{max-height:260px;} }
+
+
+
+
+.framed-picture img {
+    border: 4px solid #ff7518;
+    border-radius: 9px;
+}
+
+.custom-links code {
+    color: #fff0a6;
+    overflow-wrap: anywhere;
+}
+
+
+/* Picture gallery */
+.gallery {
+    text-align: center;
+}
+
+.gallery-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid orange;
+    background-color: #2b1b35;
+    transition: 0.3s;
+}
+
+.gallery-card img {
+    width: 100%;
+    border: 2px solid orange;
+}
+
+.gallery-card:hover {
+    background-color: #49304f;
+    border: 3px solid yellow;
+}
+
+.gallery-card img:hover {
+    opacity: 0.8;
+}
+
+.framed-picture {
+    border: 3px solid orange;
+    padding: 10px;
+    background-color: #2b1b35;
+}
+
+.framed-picture:hover {
+    border: 3px solid yellow;
+    background-color: #49304f;
+}
+
+.custom-links {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px dashed orange;
+    background-color: #24192e;
+    overflow: auto;
+}
